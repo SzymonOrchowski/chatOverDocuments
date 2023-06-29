@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@aws-sdk/client-s3':
     specifier: ^3.317.0
@@ -56,12 +52,9 @@ dependencies:
   '@trpc/server':
     specifier: ^10.18.0
     version: 10.18.0
-  graphql:
-    specifier: ^16.7.0
-    version: 16.7.0
   langchain:
-    specifier: ^0.0.70
-    version: 0.0.70(@aws-sdk/client-s3@3.317.0)(pdf-parse@1.1.1)(weaviate-ts-client@1.2.0)
+    specifier: ^0.0.69
+    version: 0.0.69(@aws-sdk/client-s3@3.317.0)(pdf-parse@1.1.1)(weaviate-ts-client@1.1.0)
   nanoid:
     specifier: ^4.0.2
     version: 4.0.2
@@ -84,8 +77,8 @@ dependencies:
     specifier: 1.12.2
     version: 1.12.2
   weaviate-ts-client:
-    specifier: ^1.2.0
-    version: 1.2.0(graphql@16.7.0)
+    specifier: ^1.1.0
+    version: 1.1.0(graphql@16.6.0)
   zod:
     specifier: ^3.21.4
     version: 3.21.4
@@ -1355,12 +1348,12 @@ packages:
     engines: {node: '>=16.15'}
     dev: false
 
-  /@graphql-typed-document-node/core@3.2.0(graphql@16.7.0):
+  /@graphql-typed-document-node/core@3.2.0(graphql@16.6.0):
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      graphql: 16.7.0
+      graphql: 16.6.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
@@ -3331,22 +3324,22 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /graphql-request@5.2.0(graphql@16.7.0):
+  /graphql-request@5.2.0(graphql@16.6.0):
     resolution: {integrity: sha512-pLhKIvnMyBERL0dtFI3medKqWOz/RhHdcgbZ+hMMIb32mEPa5MJSzS4AuXxfI4sRAu6JVVk5tvXuGfCWl9JYWQ==}
     peerDependencies:
       graphql: 14 - 16
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.7.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.6.0)
       cross-fetch: 3.1.5
       extract-files: 9.0.0
       form-data: 3.0.1
-      graphql: 16.7.0
+      graphql: 16.6.0
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /graphql@16.7.0:
-    resolution: {integrity: sha512-kdNG+ZGNf0E4dezSA2N9cRq8UdOMCcz9Wzh1dDSrCzGCz0nj6p8qlE+utY6iqr9y1sh3MZxUb7K794neZ2oT1w==}
+  /graphql@16.6.0:
+    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 
@@ -3743,8 +3736,8 @@ packages:
     engines: {node: '>= 8'}
     dev: false
 
-  /langchain@0.0.70(@aws-sdk/client-s3@3.317.0)(pdf-parse@1.1.1)(weaviate-ts-client@1.2.0):
-    resolution: {integrity: sha512-QfTbWl3oP8LwiDsLM4pvJQF+MDnf709Okvf4tQKrxf2rUxd9L0Dgli7/sNaQfaR/uZK2NOf/aO106p7I+P3Law==}
+  /langchain@0.0.69(@aws-sdk/client-s3@3.317.0)(pdf-parse@1.1.1)(weaviate-ts-client@1.1.0):
+    resolution: {integrity: sha512-9yVdBLah3PLJ7FOWM55qjjiwfmpYbtTPeD3RdCVU/YrIIM8+goS2o5AagO0RVu4I1Uu6Zs4g8XOZwkpDBIuGtg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@aws-sdk/client-lambda': ^3.310.0
@@ -3855,7 +3848,7 @@ packages:
       p-retry: 4.6.2
       pdf-parse: 1.1.1
       uuid: 9.0.0
-      weaviate-ts-client: 1.2.0(graphql@16.7.0)
+      weaviate-ts-client: 1.1.0(graphql@16.6.0)
       yaml: 2.2.1
       zod: 3.21.4
       zod-to-json-schema: 3.20.4(zod@3.21.4)
@@ -5200,11 +5193,11 @@ packages:
     hasBin: true
     dev: false
 
-  /weaviate-ts-client@1.2.0(graphql@16.7.0):
-    resolution: {integrity: sha512-YVt3O3Dj00j51DUHVEK9wUOUtBua8PyINKawYPN8cC1OHPlKNUG/qgYc1REB60WIVMq1SiykXz+8gytlilv9Dw==}
+  /weaviate-ts-client@1.1.0(graphql@16.6.0):
+    resolution: {integrity: sha512-EkIFt3as88uMHBwjDfRWHVUWdHdev5Dgbacf9BDKi9nbL7IZyj9e90Gl2kEwqZi0zIm41ZJ6+Dl4bM8NJvbobw==}
     engines: {node: '>=16.0.0'}
     dependencies:
-      graphql-request: 5.2.0(graphql@16.7.0)
+      graphql-request: 5.2.0(graphql@16.6.0)
       isomorphic-fetch: 3.0.0
     transitivePeerDependencies:
       - encoding
